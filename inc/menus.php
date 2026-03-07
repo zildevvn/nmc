@@ -1,7 +1,8 @@
 <?php
 add_action('after_setup_theme', function () {
 	register_nav_menus([
-		'primary-menu'     => esc_html__('Primary Menu', 'nmc'),
+		'primary-menu' => esc_html__('Primary Menu', 'nmc'),
+		'footer-menu'  => esc_html__('Footer Menu', 'nmc'),
 	]);
 });
 

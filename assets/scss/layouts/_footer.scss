@@ -1,0 +1,88 @@
+.main-footer {
+
+    * {
+        font-size: 18.7px;
+        font-weight: 700;
+        letter-spacing: 0;
+        color: $color-primary;
+        font-family: $font-primary;
+        line-height: 1.4;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style-type: none;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    >.container {
+        max-width: 890px;
+    }
+
+    &-logo {
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+        }
+    }
+
+    &-company {
+        margin: 20px 0 0 0;
+    }
+
+    &-office {
+        margin: 20px 0 0 0;
+
+        p,
+        a {
+            margin: 0;
+            line-height: 1.1
+        }
+    }
+
+    &-menu {
+        ul {
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 12px;
+                }
+
+                a {
+                    text-decoration: none;
+                    font-size: 16px;
+                    line-height: 1.2;
+                }
+            }
+        }
+    }
+
+    &-email {
+        margin-top: 20px;
+        display: inline-block;
+    }
+
+    &-socials {
+        gap: 10px;
+        margin: 12px 0 !important;
+    }
+
+    &-copyright {
+        margin: 0;
+
+        span {
+            display: inline-block;
+            width: 100%;
+            font-size: 15px;
+            color: #000427;
+            font-weight: 600;
+        }
+    }
+}

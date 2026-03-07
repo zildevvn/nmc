@@ -91,15 +91,9 @@ if (!function_exists('nmc_the_posts_navigation')) {
 	}
 }
 
-
-
-function get_language_url($lang) {
-    global $wp;
-    $current_url = home_url($wp->request);
-    
-    if (!str_ends_with($current_url, '/')) {
-        $current_url .= '/';
-    }
-    
-    return add_query_arg('lang', $lang, $current_url);
-}
+function nmc_get_button($btn_text, $btn_link, $btn_target = '_self') { ?>
+    <a href="<?php echo $btn_link; ?>" target="<?php echo $btn_target; ?>" class="nmc-button">
+		<?php echo $btn_text; ?>
+		<svg width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.71299 18.6929C8.43273 18.5768 8.25 18.3033 8.25 18V5.99998C8.25 5.69663 8.43273 5.42315 8.71299 5.30707C8.99324 5.19098 9.31583 5.25515 9.53033 5.46965L15.5303 11.4696C15.8232 11.7625 15.8232 12.2374 15.5303 12.5303L9.53033 18.5303C9.31583 18.7448 8.99324 18.809 8.71299 18.6929Z" fill="#000000"></path></svg>
+	</a>
+<?php }

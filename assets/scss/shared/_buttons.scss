@@ -1,0 +1,19 @@
+.nmc-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: linear-gradient(90deg, #d39053 0%, #F9EADA 49.04%, #dfa462 100%);
+    border: 2px solid #ffb86b;
+    border-radius: 15px;
+    color: $color-primary;
+    font-size: 19.6px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.4;
+    font-family: $font-second;
+    padding: 0px 24px;
+    cursor: pointer;
+    height: 54px;
+    text-decoration: none;
+}

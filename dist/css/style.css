@@ -771,7 +771,7 @@ progress {
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1180px;
+    max-width: 1480px;
   }
 }
 :root {
@@ -6221,6 +6221,127 @@ img {
     transform: rotate(1turn);
   }
 }
+.nmc-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: linear-gradient(90deg, #d39053 0%, #F9EADA 49.04%, #dfa462 100%);
+  border: 2px solid #ffb86b;
+  border-radius: 15px;
+  color: #3c0058;
+  font-size: 19.6px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.4;
+  font-family: "Noto Sans JP", sans-serif;
+  padding: 0px 24px;
+  cursor: pointer;
+  height: 54px;
+  text-decoration: none;
+}
+
+.header-main {
+  padding: 10px 0;
+}
+.header-right {
+  gap: 24px;
+}
+.header-logo img {
+  width: 100%;
+  height: auto;
+  max-width: 147px;
+}
+.header-menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+.header-menu ul li {
+  list-style-type: none;
+}
+.header-menu ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #3c0058;
+  font-family: "Hiragino Kaku Gothic Pro", serif;
+  font-weight: 400;
+}
+.header-menu ul li a:hover {
+  color: #c4a371;
+}
+.header-menu ul li.current-menu-item a {
+  color: #c4a371;
+}
+
+.main-footer * {
+  font-size: 18.7px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #3c0058;
+  font-family: "Hiragino Kaku Gothic Pro", serif;
+  line-height: 1.4;
+}
+.main-footer ul {
+  margin: 0;
+  padding: 0;
+}
+.main-footer ul li {
+  list-style-type: none;
+}
+.main-footer a {
+  text-decoration: none;
+}
+.main-footer > .container {
+  max-width: 890px;
+}
+.main-footer-logo img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+}
+.main-footer-company {
+  margin: 20px 0 0 0;
+}
+.main-footer-office {
+  margin: 20px 0 0 0;
+}
+.main-footer-office p,
+.main-footer-office a {
+  margin: 0;
+  line-height: 1.1;
+}
+.main-footer-menu ul li:not(:last-child) {
+  margin-bottom: 12px;
+}
+.main-footer-menu ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.main-footer-email {
+  margin-top: 20px;
+  display: inline-block;
+}
+.main-footer-socials {
+  gap: 10px;
+  margin: 12px 0 !important;
+}
+.main-footer-copyright {
+  margin: 0;
+}
+.main-footer-copyright span {
+  display: inline-block;
+  width: 100%;
+  font-size: 15px;
+  color: #000427;
+  font-weight: 600;
+}
+
 #wpadminbar, .site-main {
   overflow: hidden;
 }
