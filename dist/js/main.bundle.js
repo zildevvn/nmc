@@ -15,7 +15,7 @@
   \******************************************/
 /***/ (() => {
 
-eval("{(function ($) {\n  \"use strict\";\n\n  $(document).ready(function () {});\n})(jQuery);\n\n//# sourceURL=webpack://nmc/./assets/js/components/function.js?\n}");
+eval("{(function ($) {\n  \"use strict\";\n\n  $(document).ready(function () {\n    $('.btn-top').on('click', function (e) {\n      e.preventDefault();\n      $('html, body').animate({\n        scrollTop: 0\n      }, 600);\n    });\n  });\n})(jQuery);\n\n//# sourceURL=webpack://nmc/./assets/js/components/function.js?\n}");
 
 /***/ }),
 
@@ -25,7 +25,7 @@ eval("{(function ($) {\n  \"use strict\";\n\n  $(document).ready(function () {})
   \****************************************/
 /***/ (() => {
 
-eval("{(function ($) {\n  \"use strict\";\n\n  $(window).on(\"load\", function () {});\n  $(document).ready(function () {});\n})(jQuery);\n\n//# sourceURL=webpack://nmc/./assets/js/components/header.js?\n}");
+eval("{(function ($) {\n  \"use strict\";\n\n  $(window).on(\"load\", function () {});\n\n  // Mobile Menu Functions\n  function initMobileMenu() {\n    var $hamburgerBtn = $('.humberger-btn');\n    var $closeBtn = $('.menu-close-btn');\n    var $overlay = $('.mobile-menu-overlay');\n    var $body = $('body');\n    function toggleMobileMenu(e) {\n      if (e) e.preventDefault();\n      var isOpen = $overlay.hasClass('is-active');\n      if (isOpen) {\n        $overlay.removeClass('is-active');\n        $hamburgerBtn.removeClass('is-active');\n        $body.css('overflow', '');\n      } else {\n        $overlay.addClass('is-active');\n        $hamburgerBtn.addClass('is-active');\n        $body.css('overflow', 'hidden'); // Prevent background scrolling\n      }\n    }\n    $hamburgerBtn.on('click', toggleMobileMenu);\n    $closeBtn.on('click', toggleMobileMenu);\n  }\n  $(document).ready(function () {\n    initMobileMenu();\n  });\n})(jQuery);\n\n//# sourceURL=webpack://nmc/./assets/js/components/header.js?\n}");
 
 /***/ }),
 
