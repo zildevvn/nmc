@@ -5,15 +5,42 @@
     gap: 0.5rem;
     background: linear-gradient(90deg, #d39053 0%, #F9EADA 49.04%, #dfa462 100%);
     border: 2px solid #ffb86b;
-    border-radius: 15px;
+    border-radius: 10px;
     color: $color-primary;
-    font-size: 19.6px;
+    font-size: 16px;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0.16em;
     line-height: 1.4;
     font-family: $font-second;
     padding: 0px 24px;
     cursor: pointer;
-    height: 54px;
+    height: 49px;
     text-decoration: none;
+    transition: $transition-base;
+
+    @media (max-width: 767.98px) {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.08em;
+        height: 45px;
+    }
+
+    svg {
+        path {
+            fill: currentColor;
+            transition: $transition-base;
+        }
+    }
+
+    &.is-style-secondary {
+        background: linear-gradient(90deg, #E0B061 0%, #774923 100% 100%);
+        color: #fff;
+        border: none;
+
+        svg {
+            path {
+                fill: #fff;
+            }
+        }
+    }
 }

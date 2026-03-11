@@ -21,18 +21,39 @@ body {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 45px;
+    line-height: 1.74;
+    letter-spacing: 0.06em;
+    font-family: $font-quaternary;
 
-    @include media-breakpoint-up(lg) {
-        font-size: 64px;
+    @media (max-width: 1199.98px) {
+        font-size: 40px;
+    }
+
+    @media (max-width: 1024.98px) {
+        font-size: 32px;
+    }
+
+    @media (max-width: 767.98px) {
+        font-size: 30px;
     }
 }
 
 h2 {
-    font-size: 32px;
+    font-family: "Hiragino Mincho Pro", serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.6;
+    letter-spacing: 0.18em;
 
-    @include media-breakpoint-up(lg) {
-        font-size: 48px;
+    @media (max-width: 1024.98px) {
+        font-size: 26px;
+    }
+
+    @media (max-width: 767.98px) {
+        font-size: 20px;
+        letter-spacing: 0.09em;
+        line-height: 37.5px;
     }
 }
 
@@ -53,5 +74,66 @@ img {
 @keyframes s2 {
     to {
         transform: rotate(1turn)
+    }
+}
+
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%); // Moves exactly half the width (which is the original content size before duplication)
+    }
+}
+
+
+.nmc-section {
+    width: 100%;
+    position: relative;
+
+    >.container {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.nmc-section-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.nmc-section-content {
+    position: relative;
+    z-index: 1;
+}
+
+.ncm-heading-highlight {
+    color: $color-gray-light;
+    font-size: 105px;
+    line-height: 1.5;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: "Marcellus SC", serif;
+    letter-spacing: 0.06em;
+
+    @media (max-width: 1024.98px) {
+        font-size: 80px;
+    }
+
+    @media (max-width: 767.98px) {
+        font-size: 52px;
+        letter-spacing: 0.03em;
     }
 }

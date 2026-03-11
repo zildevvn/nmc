@@ -15,7 +15,7 @@
   \******************************************/
 /***/ (() => {
 
-eval("{(function ($) {\n  \"use strict\";\n\n  $(document).ready(function () {\n    $('.btn-top').on('click', function (e) {\n      e.preventDefault();\n      $('html, body').animate({\n        scrollTop: 0\n      }, 600);\n    });\n  });\n})(jQuery);\n\n//# sourceURL=webpack://nmc/./assets/js/components/function.js?\n}");
+eval("{(function ($) {\n  \"use strict\";\n\n  function initMarquee() {\n    var $marquee = $('.partners-section__marquee');\n    if ($marquee.length) {\n      // Duplicate the content to allow for a seamless infinite scroll loop\n      var content = $marquee.html();\n      $marquee.append(content);\n    }\n  }\n  $(document).ready(function () {\n    initMarquee();\n    $('.btn-top').on('click', function (e) {\n      e.preventDefault();\n      $('html, body').animate({\n        scrollTop: 0\n      }, 600);\n    });\n  });\n})(jQuery);\n\n//# sourceURL=webpack://nmc/./assets/js/components/function.js?\n}");
 
 /***/ }),
 

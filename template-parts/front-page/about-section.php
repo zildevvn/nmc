@@ -1,0 +1,30 @@
+<section class="nmc-section about-section">
+    <div class="nmc-section-bg about-section-bg">
+        <img class="d-none d-lg-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg-member.jpg" alt="background about section" />
+        <img class="d-lg-none" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg_about_mb.jpg" alt="background about section mobile" />
+    </div>
+
+    <div class="container">
+        <div class="nmc-section-content about-section-content">
+            <h2 class="about-section__title ncm-heading-highlight">About</h2>
+            <p class="about-section__desc h2">Nine Members Clubについて</p>
+            <div class="about-section__media">
+                <div class="about-section__media__image d-flex justify-content-start justify-content-md-end"> 
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/image-about.jpg" alt="image member" />
+                </div>
+                
+                <div class="about-section__media__text">
+                    <p>日本初のポーカー実業団を擁する 「ナインメンバーズクラブ」。</p>
+                    <p>渋谷の豪華拠点「ベルテックス東京」を舞台に、ナイン専属のプロ契約や 世界大会挑戦をサポートします。</p>
+                    <p>2030年大阪IRを見据えた教育、海外視察、多彩なイベントも充実。月額1万円で遊びと夢を両立し、1万人の仲間と人生を極めませんか？</p>
+                </div>
+            </div>
+
+            <?php nmc_get_button('詳細はこちら', '#!', '_self', 'is-style-secondary'); ?>
+
+            <div class="about-section__image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/image-member.png" alt="image member vd" />
+            </div>
+        </div>
+    </div>
+</section>
