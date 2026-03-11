@@ -64,7 +64,7 @@
         }
     }
 
-    .partners-section {
+    .logos-section {
         overflow: hidden;
         padding: 32px 0;
         background-color: #fff;
@@ -445,6 +445,183 @@
                     line-height: 15px;
                     margin-top: 40px;
                 }
+            }
+        }
+    }
+
+    .nmc-ss-cate-posts {
+        padding-bottom: 70px;
+
+        @media (max-width: 1024.98px) {
+            padding-bottom: 60px;
+        }
+
+        @media (max-width: 767.98px) {
+            padding-bottom: 40px;
+        }
+
+        >.container {
+            max-width: 1042px;
+        }
+
+    }
+
+    .record-section {
+        position: relative;
+        background: #fff;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgb(237 237 237 / 80%);
+            z-index: 1;
+        }
+    }
+
+    .partners-section {
+        padding-bottom: 142px;
+        overflow: hidden;
+
+        @media (max-width: 1199.98px) {
+            padding-bottom: 90px;
+        }
+
+        @media (max-width: 1024.98px) {
+            padding-bottom: 60px;
+        }
+
+        @media (max-width: 767.98px) {
+            padding-bottom: 45px;
+        }
+
+        >.container {
+            max-width: 1042px;
+        }
+
+        .ncm-heading-highlight {
+            color: #230a5c;
+            margin-top: -30px !important;
+
+            @media (max-width: 1199.98px) {
+                margin-top: -25px !important;
+            }
+
+            @media (max-width: 1024.98px) {
+                margin-top: -25px !important;
+            }
+
+            @media (max-width: 767.98px) {
+                margin-top: 0 !important;
+            }
+        }
+
+        &__desc {
+            color: #fff;
+        }
+
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0px;
+            margin-top: 60px;
+
+            @media (max-width:1199.98px) {
+                margin-top: 40px;
+            }
+
+            @media (max-width: 767.98px) {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px 0;
+                margin-top: 20px;
+            }
+
+            .item-partner {
+                &__thumbnail {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    overflow: hidden;
+
+                    >img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        max-width: calc(87% - 8px);
+                        max-height: calc(87% - 10px);
+                        border-radius: 105px;
+                    }
+
+                    .bg img {
+                        width: 100%;
+                        aspect-ratio: 9 / 16;
+                        object-fit: cover;
+                        object-position: center;
+                        display: block;
+                    }
+                }
+
+                &__title {
+                    line-height: 21.55px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    font-family: $font-second ;
+                    color: #ffffff;
+
+                    @media (max-width: 767.98px) {
+                        font-size: 15px;
+                        line-height: 13px;
+                        letter-spacing: 0.03em;
+                    }
+                }
+            }
+        }
+
+        &__action {
+            margin-top: 70px;
+
+            @media (max-width: 767.98px) {
+                margin-top: 42px;
+            }
+        }
+    }
+
+    .voice-section {
+        padding-bottom: 70px;
+
+        &-header {
+            &-content {
+                position: relative;
+                z-index: 2;
+            }
+
+            .ncm-heading-highlight {
+                color: #230a5c;
+                margin-top: -30px !important;
+                display: inline-block;
+
+                @media (max-width: 1199.98px) {
+                    margin-top: -25px !important;
+                }
+
+                @media (max-width: 1024.98px) {
+                    margin-top: -25px !important;
+                }
+
+                @media (max-width: 767.98px) {
+                    margin-top: 0 !important;
+                }
+            }
+
+            &__desc {
+                color: #fff;
             }
         }
     }

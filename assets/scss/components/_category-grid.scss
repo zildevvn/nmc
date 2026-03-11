@@ -1,0 +1,187 @@
+.nmc-category-posts {
+    .category-sub-title {
+        gap: 20px;
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 22.85px;
+        letter-spacing: 0.06em;
+        color: $color-primary;
+
+        @media (max-width: 575.98px) {
+            font-size: 20px;
+            letter-spacing: 0.03em;
+            line-height: 17px;
+            gap: 8px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 35px;
+
+            @media (max-width: 575.98px) {
+                max-width: 26px;
+            }
+        }
+    }
+
+    .category-posts-list {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+
+        @media (max-width: 1024.98px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (max-width: 767.98px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 575.98px) {
+            grid-template-columns: repeat(1, 1fr);
+            margin-top: 27px;
+        }
+
+        .item-post {
+            position: relative;
+
+            @media (max-width: 575.98px) {
+                display: flex;
+                gap: 15px;
+            }
+
+            >a {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                font-size: 0;
+                opacity: 0;
+                z-index: 9;
+            }
+
+            &__content,
+            &__thumbnail {
+                @media (max-width: 575.98px) {
+                    width: 50%;
+                }
+            }
+
+            &__thumbnail {
+                @media (min-width: 576px) {
+                    margin-bottom: 35px;
+                }
+
+                img {
+                    width: 100%;
+                    height: 132px;
+                    object-fit: cover;
+                    object-position: top center;
+                    border-radius: 10px;
+                    transition: $transition-base;
+
+                    @media (max-width: 575.98px) {
+                        height: 94px;
+                    }
+                }
+            }
+
+            &__date {
+                gap: 8px;
+                color: rgba($color: $color-blue, $alpha: 0.27);
+                font-size: 12px;
+                line-height: 24.8px;
+                letter-spacing: 0.06em;
+                font-family: $font-second;
+                font-weight: 700;
+
+                @media (max-width: 575.98px) {
+                    font-size: 9px;
+                    letter-spacing: 0.03em;
+                    line-height: 19px;
+                    gap: 6px;
+                }
+
+                svg {
+                    width: 100%;
+                    height: auto;
+                    max-width: 14px;
+
+                    @media (max-width: 575.98px) {
+                        max-width: 12px;
+                    }
+
+                    path {
+                        stroke: rgba($color: $color-blue, $alpha: 0.27);
+                    }
+                }
+            }
+
+            &__title {
+                font-size: 16px;
+                line-height: 24.8px;
+                letter-spacing: 0.06em;
+                font-weight: 700;
+                font-family: $font-second;
+                margin-top: 2px;
+
+                @media (max-width: 575.98px) {
+                    font-size: 13px;
+                    letter-spacing: 0.03em;
+                    line-height: 18px;
+                }
+            }
+
+            &__cate {
+                background: $color-primary;
+                padding: 0 10px;
+                border-radius: 8px;
+                gap: 5px;
+                height: 24px;
+                color: #fff;
+                font-size: 16px;
+                line-height: 24.8px;
+                letter-spacing: 0.06em;
+                font-weight: 700;
+                font-family: $font-second;
+                max-width: fit-content;
+                margin: 15px 0 0 0;
+
+                @media (max-width: 575.98px) {
+                    font-size: 9px;
+                    letter-spacing: 0.03em;
+                    line-height: 19px;
+                    margin-top: 10px;
+                    height: 20px;
+                    padding: 0 14px;
+                }
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    max-width: 14px;
+                    filter: brightness(0) invert(1);
+
+                    @media (max-width: 575.98px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .category-view-more {
+        margin-top: 70px;
+
+        @media (max-width: 1024.98px) {
+            margin-top: 60px;
+        }
+
+        @media (max-width: 767.98px) {
+            margin-top: 40px;
+        }
+    }
+}
