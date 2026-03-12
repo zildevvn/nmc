@@ -43,4 +43,16 @@
             }
         }
     }
+
+    &.is-style-green {
+        background: $color-green;
+        border-color: $color-green;
+        color: #fff;
+
+        svg {
+            path {
+                fill: #fff;
+            }
+        }
+    }
 }

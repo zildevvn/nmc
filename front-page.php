@@ -16,6 +16,7 @@ get_header();
         <?php get_template_part('template-parts/front-page/partners-section'); ?>
         <?php get_template_part('template-parts/front-page/news-section'); ?>
         <?php get_template_part('template-parts/front-page/voice-section'); ?>
+        <?php get_template_part('template-parts/general/contact-section'); ?>
     </main>
 <?php
 get_footer();
