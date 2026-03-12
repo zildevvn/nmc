@@ -164,7 +164,7 @@ function nmc_get_posts_by_category($category_slug, $posts_per_page = 4) {
 			<div class="category-posts-list">
 				<?php $index = 0; ?>
 				<?php while ($query->have_posts()): $query->the_post(); ?>
-					<div class="item-post" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="<?php echo $index * 100; ?>">
+					<div class="item-post" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="<?php echo $index * 200; ?>">
 						<div class="item-post__thumbnail">
 							<?php the_post_thumbnail('full', ['class' => 'img-fluid']); ?>
 						</div>

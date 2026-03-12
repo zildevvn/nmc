@@ -21,8 +21,9 @@
 
             <?php if ($query->have_posts()): ?>
                 <div class="partners-section__list"> 
+                    <?php $index = 1 ?>
                     <?php while ($query->have_posts()): $query->the_post(); ?>
-                        <div class="item-partner"> 
+                        <div class="item-partner" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="<?php echo $index * 200; ?>"> 
                             <div class="item-partner__thumbnail"> 
                                 <div class="bg"> 
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/image-graphic-partners.png" alt="image graphic partner">
@@ -32,7 +33,7 @@
 
                             <h3 class="item-partner__title mb-0 text-center"><?php the_title(); ?></h3>
                         </div>
-                    <?php endwhile; wp_reset_postdata(); ?>
+                    <?php $index++; endwhile; wp_reset_postdata(); ?>
                 </div>
 
                 <div class="partners-section__action">

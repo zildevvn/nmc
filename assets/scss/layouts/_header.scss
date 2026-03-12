@@ -1,6 +1,22 @@
 .header {
     &-main {
         padding: 10px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background: #fff;
+        transition: transform 0.3s ease-in-out;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+        &.is-hidden {
+            transform: translateY(-100%);
+        }
+
+        body.logged-in & {
+            top: 32px;
+        }
     }
 
     &-right {

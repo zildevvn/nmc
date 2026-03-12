@@ -34,7 +34,7 @@
                 <div class="voice-section__list"> 
                     <?php $index = 1; ?>
                     <?php while ($query->have_posts()): $query->the_post(); ?>
-                        <div class="item-voice" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="<?php echo $index * 100; ?>">
+                        <div class="item-voice" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="<?php echo $index * 200; ?>">
                             <div class="item-voice__thumbnail"> 
                                 <?php the_post_thumbnail('full', ['class' => 'img-fluid']); ?>
                             </div>
