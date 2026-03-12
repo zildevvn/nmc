@@ -1,14 +1,14 @@
-<section class="nmc-section about-section">
+<section class="nmc-section about-section" >
     <div class="nmc-section-bg about-section-bg">
         <img class="d-none d-lg-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg-member.jpg" alt="background about section" />
         <img class="d-lg-none" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg_about_mb.jpg" alt="background about section mobile" />
     </div>
 
     <div class="container">
-        <div class="nmc-section-content about-section-content">
-            <h2 class="about-section__title ncm-heading-highlight">About</h2>
-            <p class="about-section__desc h2">Nine Members Clubについて</p>
-            <div class="about-section__media">
+        <div class="nmc-section-content about-section-content" >
+            <h2 class="about-section__title ncm-heading-highlight" data-aos="fade-up" data-aos-easing="ease-in-out">About</h2>
+            <p class="about-section__desc h2" data-aos="fade-up" data-aos-easing="ease-in-out">Nine Members Clubについて</p>
+            <div class="about-section__media" data-aos="fade-up" data-aos-easing="ease-in-out">
                 <div class="about-section__media__image d-flex justify-content-start justify-content-md-end"> 
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/image-about.jpg" alt="image member" />
                 </div>
@@ -20,9 +20,11 @@
                 </div>
             </div>
 
-            <?php nmc_get_button('詳細はこちら', '#!', '_self', 'is-style-secondary'); ?>
+            <div class="d-flex justify-content-center" data-aos="fade-up" data-aos-easing="ease-in-out">
+                <?php nmc_get_button('詳細はこちら', '#!', '_self', 'is-style-secondary'); ?>
+            </div>
 
-            <div class="about-section__image">
+            <div class="about-section__image" data-aos="fade-up" data-aos-easing="ease-in-out">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/image-member.png" alt="image member vd" />
             </div>
         </div>

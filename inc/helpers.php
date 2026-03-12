@@ -146,11 +146,11 @@ function nmc_get_posts_by_category($category_slug, $posts_per_page = 4) {
 		?>
 
 		<div class="nmc-category-posts">
-			<h2 class="category-title ncm-heading-highlight m-0">
+			<h2 class="category-title ncm-heading-highlight m-0" data-aos="fade-up" data-aos-easing="ease-in-out">
 				<?php echo esc_html($category->name); ?>
 			</h2>
 
-			<div class="category-sub-title d-flex align-items-center">
+			<div class="category-sub-title d-flex align-items-center" data-aos="fade-up" data-aos-easing="ease-in-out">
 				<div class="icon"> 
 					<?php if($category_slug == 'news'):?>
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-pen.png" alt="">
@@ -162,8 +162,9 @@ function nmc_get_posts_by_category($category_slug, $posts_per_page = 4) {
 			</div>
 
 			<div class="category-posts-list">
+				<?php $index = 0; ?>
 				<?php while ($query->have_posts()): $query->the_post(); ?>
-					<div class="item-post">
+					<div class="item-post" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="<?php echo $index * 100; ?>">
 						<div class="item-post__thumbnail">
 							<?php the_post_thumbnail('full', ['class' => 'img-fluid']); ?>
 						</div>
@@ -189,7 +190,7 @@ function nmc_get_posts_by_category($category_slug, $posts_per_page = 4) {
 
 						<a href="<?php the_permalink(); ?>"> Read More </a>
 					</div>
-				<?php endwhile; wp_reset_postdata(); ?>
+				<?php $index++; endwhile; wp_reset_postdata(); ?>
 			</div>
 
 			<div class="category-view-more d-flex justify-content-center">
