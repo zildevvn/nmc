@@ -105,7 +105,7 @@ function nmc_get_button($btn_text, $btn_link, $btn_target = '_self', $style = ''
  * @param int    $posts_per_page Number of posts to retrieve. Default 4.
  * @return void
  */
-function nmc_get_posts_by_category($category_slug, $posts_per_page = 4) {
+function nmc_get_posts_by_category($category_slug, $posts_per_page = 4, $title = '') {
 	if (empty($category_slug)) {
 		return;
 	}
@@ -147,7 +147,7 @@ function nmc_get_posts_by_category($category_slug, $posts_per_page = 4) {
 
 		<div class="nmc-category-posts">
 			<h2 class="category-title ncm-heading-highlight m-0" data-aos="fade-up" data-aos-easing="ease-in-out">
-				<?php echo esc_html($category->name); ?>
+				<?php echo esc_html(!empty($title) ? $title : $category->name); ?>
 			</h2>
 
 			<div class="category-sub-title d-flex align-items-center" data-aos="fade-up" data-aos-easing="ease-in-out">

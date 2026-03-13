@@ -1,0 +1,15 @@
+body.category {
+    .category-section {
+        padding-bottom: 70px;
+
+        @include media-breakpoint-down(md) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        >.container {
+            max-width: 1034px;
+
+        }
+    }
+}
