@@ -9063,11 +9063,14 @@ body.category .category-section > .container {
 .page-template-events-template .content-section > .container {
   max-width: 1046px;
 }
-.page-template-events-template .content-section__content {
-  background: #fff;
-}
 .page-template-events-template .content-section__content iframe {
+  display: block;
   width: 100%;
-  height: 880px;
-  min-height: fit-content;
+  height: 900px;
+  border: 0;
+}
+@media (max-width: 767.98px) {
+  .page-template-events-template .content-section__content iframe {
+    height: 700px;
+  }
 }
