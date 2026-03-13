@@ -17,6 +17,7 @@
     height: 49px;
     text-decoration: none;
     transition: $transition-base;
+    position: relative;
 
     @media (max-width: 767.98px) {
         font-size: 14px;
@@ -54,5 +55,104 @@
                 fill: #fff;
             }
         }
+    }
+
+    &::before,
+    &:after {
+        content: " ";
+        display: inline-block;
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        pointer-events: none;
+        animation-delay: 1s;
+        background-image: url(../../images/star.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &::before {
+        top: -23px;
+        left: 0;
+        animation: n9_star_top 14s linear infinite forwards;
+    }
+
+    &::after {
+        bottom: -23px;
+        right: 0;
+        animation: n9_star_bottom 14s linear infinite forwards;
+    }
+}
+
+@keyframes n9_star_top {
+    0% {
+        opacity: 0;
+        left: 0;
+        transform: scale(.4);
+    }
+
+    5% {
+        opacity: .9
+    }
+
+    15% {
+        left: calc(50% - 45px);
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    40% {
+        opacity: .9
+    }
+
+    45% {
+        left: calc(100% - 45px);
+        transform: scale(.9);
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes n9_star_bottom {
+    0% {
+        opacity: 0;
+        right: 0;
+        transform: scale(.4);
+    }
+
+    5% {
+        opacity: .9
+    }
+
+    15% {
+        right: calc(50% - 45px);
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    40% {
+        opacity: .9
+    }
+
+    45% {
+        right: calc(100% - 45px);
+        transform: scale(.9);
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
     }
 }

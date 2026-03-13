@@ -35,9 +35,24 @@
         });
     }
 
+    function initFaqAccordion() {
+        $('.faq-item.is-active .faq-item__answer').show();
+
+        $('.faq-item__question').on('click', function() {
+            const $parent = $(this).parent();
+            const $answer = $parent.find('.faq-item__answer');
+
+            $('.faq-item').not($parent).removeClass('is-active').find('.faq-item__answer').slideUp();
+            
+            $parent.toggleClass('is-active');
+            $answer.slideToggle();
+        });
+    }
+
     $(document).ready(function () {
         initMarquee();
         initHeaderScroll();
+        initFaqAccordion();
 
         $('.btn-top').on('click', function (e) {
             e.preventDefault();
