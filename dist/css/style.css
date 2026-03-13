@@ -9158,6 +9158,224 @@ body.category .category-section > .container {
   text-align: left;
   font-weight: 600;
 }
+.page-template-company-template .access-section {
+  padding-bottom: 70px;
+  padding-top: 20px;
+}
+@media (max-width: 767.98px) {
+  .page-template-company-template .access-section {
+    padding: 0 0 50px 0;
+  }
+}
 .page-template-company-template .access-section > .container {
   max-width: 840px;
+}
+.page-template-company-template .access-section .ncm-heading-highlight {
+  color: #642a6c;
+}
+.page-template-company-template .access-section p.h2 {
+  margin-top: -15px;
+  color: #fff;
+}
+@media (max-width: 767.98px) {
+  .page-template-company-template .access-section p.h2 {
+    margin-top: -5px;
+  }
+}
+.page-template-company-template .access-section .access-section-content {
+  margin-top: 40px;
+  background: #fff;
+  padding: 80px 20px 20px 20px;
+  min-height: 380px;
+}
+@media (max-width: 1023.98px) {
+  .page-template-company-template .access-section .access-section-content {
+    padding-top: 60px;
+  }
+}
+@media (max-width: 767.98px) {
+  .page-template-company-template .access-section .access-section-content {
+    min-height: 193px;
+    padding: 40px 10px 20px 10px;
+  }
+}
+.page-template-company-template .access-section .access-section-content p {
+  font-size: 18px;
+  line-height: 31px;
+  letter-spacing: 0.06em;
+  color: #333333;
+}
+@media (max-width: 767.98px) {
+  .page-template-company-template .access-section .access-section-content p {
+    font-size: 15px;
+    line-height: 27px;
+  }
+}
+.page-template-company-template .rinen-section {
+  padding-bottom: 70px;
+}
+@media (max-width: 767.98px) {
+  .page-template-company-template .rinen-section {
+    padding-bottom: 40px;
+  }
+}
+.page-template-company-template .rinen-section > .container {
+  max-width: 1100px;
+}
+.page-template-company-template .rinen-section .ncm-heading-highlight {
+  color: #ffffff;
+}
+.page-template-company-template .rinen-section p.h2 {
+  margin-top: -15px;
+  color: #3c0058;
+}
+@media (max-width: 767.98px) {
+  .page-template-company-template .rinen-section p.h2 {
+    margin-top: -5px;
+  }
+}
+.page-template-company-template .rinen-section__list .rinen-item {
+  gap: 20px;
+}
+@media (max-width: 767.98px) {
+  .page-template-company-template .rinen-section__list .rinen-item {
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 768px) {
+  .page-template-company-template .rinen-section__list .rinen-item:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+}
+.page-template-company-template .rinen-section__list .rinen-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+@media (max-width: 767.98px) {
+  .page-template-company-template .rinen-section__list .rinen-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+.page-template-company-template .rinen-section__list .rinen-item > div {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .page-template-company-template .rinen-section__list .rinen-item > div {
+    width: 50%;
+  }
+}
+.page-template-company-template .rinen-section__list .rinen-item__image {
+  text-align: center;
+}
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .page-template-company-template .rinen-section__list .rinen-item__image {
+    width: 40%;
+  }
+}
+.page-template-company-template .rinen-section__list .rinen-item__content {
+  text-align: left;
+  color: #000427;
+  letter-spacing: 0.02em;
+  font-weight: 300;
+}
+@media (max-width: 767.98px) {
+  .page-template-company-template .rinen-section__list .rinen-item__content {
+    text-align: center;
+    letter-spacing: 0.01em;
+  }
+}
+.page-template-company-template .rinen-section__list .rinen-item__title {
+  color: #000427;
+  letter-spacing: 0.02em;
+  font-weight: 300;
+}
+@media (max-width: 767.98px) {
+  .page-template-company-template .rinen-section__list .rinen-item__title {
+    font-size: 20px;
+    line-height: 15px;
+    letter-spacing: 0.01em;
+  }
+}
+.page-template-company-template .rinen-section__list .rinen-item__sub-title {
+  font-size: 20px;
+  line-height: 30.6px;
+  margin-top: 20px;
+}
+@media (max-width: 767.98px) {
+  .page-template-company-template .rinen-section__list .rinen-item__sub-title {
+    font-size: 18px;
+    line-height: 15px;
+  }
+}
+.page-template-company-template .rinen-section__list .rinen-item__text {
+  font-size: 16px;
+  line-height: 30.6px;
+  margin-top: 24px;
+}
+@media (max-width: 767.98px) {
+  .page-template-company-template .rinen-section__list .rinen-item__text {
+    font-size: 14px;
+    line-height: 23px;
+  }
+}
+.page-template-company-template .rinen-section__list .rinen-item__text p {
+  margin: 0;
+}
+@media (max-width: 767.98px) {
+  .page-template-company-template .rinen-section__list .rinen-item__text p:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+.page-template-company-template .message-section {
+  background: #f9f9f9;
+  padding-bottom: 80px;
+  padding-top: 32px;
+}
+@media (max-width: 767.98px) {
+  .page-template-company-template .message-section {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+.page-template-company-template .message-section > .container {
+  max-width: 700px;
+}
+.page-template-company-template .message-section .ncm-heading-highlight {
+  color: #efefef;
+}
+.page-template-company-template .message-section p.h2 {
+  margin-top: -15px;
+  color: #3c0058;
+}
+@media (max-width: 767.98px) {
+  .page-template-company-template .message-section p.h2 {
+    margin-top: -5px;
+  }
+}
+.page-template-company-template .message-section-content {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 25.6px;
+  letter-spacing: 0.06em;
+  color: #000427;
+}
+@media (max-width: 767.98px) {
+  .page-template-company-template .message-section-content {
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    margin-top: 20px;
+  }
+}
+.page-template-company-template .message-section-content p {
+  margin: 0;
+}
+.page-template-company-template .message-section-content .item:not(:last-child) {
+  margin-bottom: 24px;
+}
+@media (max-width: 767.98px) {
+  .page-template-company-template .message-section-content .item:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
