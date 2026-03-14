@@ -65,6 +65,33 @@ if (!function_exists('nmc_create_custom_post_type')) {
 			'show_in_rest' => false,
 			'supports' => ['title', 'editor', 'thumbnail', 'revisions'],
 		));
+
+		register_post_type('poker', array(
+			'labels' => [
+				'name' => 'Poker',
+				'singular_name' => 'poker',
+				'add_new' => 'Add New',
+				'add_new_item' => 'Add New',
+				'edit_item' => 'Edit Poker',
+				'new_item' => 'New Poker',
+				'view_item' => 'View Poker',
+				'search_items' => 'Search Poker',
+				'not_found' => 'No Poker found',
+				'not_found_in_trash' => 'No poker found in Trash',
+				'menu_name' => 'Poker',
+			],
+			'public' => true,
+			'show_ui' => true,
+			'show_in_menu' => true,
+			'query_var' => true,
+			'capability_type' => 'post',
+			'has_archive' => false,
+			'hierarchical' => false,
+			'menu_position' => 20,
+			'menu_icon' => 'dashicons-groups',
+			'show_in_rest' => false,
+			'supports' => ['title', 'editor', 'thumbnail', 'revisions'],
+		));
 	}
 
 	add_action('init', 'nmc_create_custom_post_type', 0);

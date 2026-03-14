@@ -12,6 +12,6 @@ get_header();
             ?>
         </div>
     </section>
-    <?php get_template_part('template-parts/general/contact-section'); ?>
+    <?php get_template_part('template-parts/shared/contact-section'); ?>
 </main>
 <?php get_footer(); ?>

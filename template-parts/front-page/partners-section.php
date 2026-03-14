@@ -5,8 +5,8 @@
     </div>
 
     <div class="container text-center">
-        <h2 class="partners-section__title ncm-heading-highlight m-0">PARTNER</h2>
-        <p class="partners-section__desc h2 m-0"> 所属プロ&提携先 </p>
+        <h2 class="partners-section__title ncm-heading-highlight m-0" data-aos="fade-up" data-aos-easing="ease-in-out">PARTNER</h2>
+        <p class="partners-section__desc h2 m-0" data-aos="fade-up" data-aos-easing="ease-in-out"> 所属プロ&提携先 </p>
         <?php 
             $args = array(
                 'post_type'      => 'partners',

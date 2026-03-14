@@ -1,7 +1,8 @@
 <section class="nmc-section content-section">
     <div class="container">
-        <div class="content-section__content text-center" data-aos="fade-up" >
-            <iframe src="https://app.9mbc.co.jp/embed/events/calendar"></iframe> 
-        </div>
+        <?php get_template_part('template-parts/shared/event-list', null, [
+            'aos' => 'fade-up'
+        ]); ?>
+
     </div>
 </section>

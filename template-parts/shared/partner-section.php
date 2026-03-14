@@ -1,4 +1,4 @@
-<section class="nmc-section partner-section">
+<section class="nmc-section partner-general-section">
     <div class="nmc-section-bg"> 
         <img src="<?= get_template_directory_uri() ?>/assets/images/about/bg-partner-desktop.jpg" alt="bg parter desktop"/>
      </div>

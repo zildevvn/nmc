@@ -14,9 +14,11 @@
                 イベント
             </p>
 
-            <div class="event-section-content text-center" data-aos="fade-up" data-aos-easing="ease-in-out"> 
-                <h2>イベントスケジュールが入ります。</h2>
-            </div>
+            <?php get_template_part('template-parts/shared/event-list', null, [
+                'aos' => 'fade-up',
+                'aos_easing' => 'ease-in-out'
+            ]); ?>
+
         </div>
     </div>
 </section>

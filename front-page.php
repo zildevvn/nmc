@@ -15,8 +15,8 @@ get_header();
         <?php get_template_part('template-parts/front-page/record-section'); ?>
         <?php get_template_part('template-parts/front-page/partners-section'); ?>
         <?php get_template_part('template-parts/front-page/news-section'); ?>
-        <?php get_template_part('template-parts/general/voice-section'); ?>
-        <?php get_template_part('template-parts/general/contact-section'); ?>
+        <?php get_template_part('template-parts/shared/voice-section'); ?>
+        <?php get_template_part('template-parts/shared/contact-section'); ?>
     </main>
 <?php
 get_footer();

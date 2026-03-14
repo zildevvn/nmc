@@ -1,7 +1,7 @@
 <section class="nmc-section about-section" >
     <div class="nmc-section-bg about-section-bg">
-        <img class="d-none d-lg-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg-member.jpg" alt="background about section" />
-        <img class="d-lg-none" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg_about_mb.jpg" alt="background about section mobile" />
+        <img class="d-none d-md-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg-member.jpg" alt="background about section" />
+        <img class="d-md-none" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg_about_mb.jpg" alt="background about section mobile" />
     </div>
 
     <div class="container">
