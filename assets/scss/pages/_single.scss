@@ -1,0 +1,127 @@
+.single-post-page {
+    .post {
+        padding: 90px 0;
+
+        @media (max-width: 1199.98px) {
+            padding: 60px 0;
+        }
+
+        @media (max-width: 767.98px) {
+            padding: 40px 0;
+        }
+
+        >.container {
+            max-width: 1000px;
+        }
+
+        &__date {
+            gap: 8px;
+            color: rgba($color: $color-blue, $alpha: 0.27);
+            font-size: 12px;
+            line-height: 24.8px;
+            letter-spacing: 0.06em;
+            font-family: $font-second;
+            font-weight: 700;
+
+            @media (max-width: 575.98px) {
+                font-size: 9px;
+                letter-spacing: 0.03em;
+                line-height: 19px;
+                gap: 6px;
+            }
+
+            svg {
+                width: 100%;
+                height: auto;
+                max-width: 14px;
+
+                @media (max-width: 575.98px) {
+                    max-width: 12px;
+                }
+
+                path {
+                    stroke: rgba($color: $color-blue, $alpha: 0.27);
+                }
+            }
+        }
+
+        &__title {
+            margin-top: 12px;
+        }
+
+        &__thumbnail {
+            margin-top: 32px;
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 12px;
+            }
+        }
+
+        &__content {
+            margin-top: 32px;
+
+            p,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &__category {
+            background: $color-primary;
+            padding: 0 10px;
+            border-radius: 8px;
+            gap: 5px;
+            height: 24px;
+            color: #fff;
+            font-size: 16px;
+            line-height: 24.8px;
+            letter-spacing: 0.06em;
+            font-weight: 700;
+            font-family: $font-second;
+            max-width: fit-content;
+            margin: 15px 0 0 0;
+
+            @media (max-width: 575.98px) {
+                font-size: 9px;
+                letter-spacing: 0.03em;
+                line-height: 19px;
+                margin-top: 10px;
+                height: 20px;
+                padding: 0 14px;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                max-width: 14px;
+                filter: brightness(0) invert(1);
+
+                @media (max-width: 575.98px) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .nmc-related-posts {
+        padding: 10px 0 80px 0;
+        background: #fdf9f6;
+
+        @media (max-width: 767.98px) {
+            padding-bottom: 40px;
+        }
+
+        .category-sub-title {
+            margin-bottom: 40px;
+        }
+    }
+}

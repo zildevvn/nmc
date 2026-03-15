@@ -7,13 +7,16 @@
 
 get_header();
 ?>
-<div class="container wysiwyg-editor wysiwyg-editor-post">
-    <?php
-    while (have_posts()):
-        the_post();
-        the_content();
-    endwhile; 
-    ?>
+<div class="single-post-page">
+    <main id="primary" class="site-main">
+        <?php
+            while (have_posts()):
+                the_post();
+                get_template_part('template-parts/content-post');
+                get_template_part('template-parts/shared/contact-section');
+            endwhile; 
+        ?>
+    </main>
 </div>
 <?php
 get_footer();

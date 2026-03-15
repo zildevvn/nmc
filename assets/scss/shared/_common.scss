@@ -23,6 +23,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background: #fff;
     letter-spacing: 0.06em;
+    --bs-body-color: $color-blue;
+    --bs-body-font-family: $font-second;
+    --bs-body-font-size: 16px;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
 }
 
 h1 {

@@ -6191,6 +6191,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #fff;
   letter-spacing: 0.06em;
+  --bs-body-color: $color-blue;
+  --bs-body-font-family: $font-second;
+  --bs-body-font-size: 16px;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
 }
 
 h1, .h1 {
@@ -8007,6 +8012,130 @@ body.logged-in .mobile-menu-overlay {
 }
 .error404 .site-main .btn-primary:hover {
   background: #dee2e6;
+}
+
+.single-post-page .post {
+  padding: 90px 0;
+}
+@media (max-width: 1199.98px) {
+  .single-post-page .post {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .single-post-page .post {
+    padding: 40px 0;
+  }
+}
+.single-post-page .post > .container {
+  max-width: 1000px;
+}
+.single-post-page .post__date {
+  gap: 8px;
+  color: rgba(0, 4, 39, 0.27);
+  font-size: 12px;
+  line-height: 24.8px;
+  letter-spacing: 0.06em;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+}
+@media (max-width: 575.98px) {
+  .single-post-page .post__date {
+    font-size: 9px;
+    letter-spacing: 0.03em;
+    line-height: 19px;
+    gap: 6px;
+  }
+}
+.single-post-page .post__date svg {
+  width: 100%;
+  height: auto;
+  max-width: 14px;
+}
+@media (max-width: 575.98px) {
+  .single-post-page .post__date svg {
+    max-width: 12px;
+  }
+}
+.single-post-page .post__date svg path {
+  stroke: rgba(0, 4, 39, 0.27);
+}
+.single-post-page .post__title {
+  margin-top: 12px;
+}
+.single-post-page .post__thumbnail {
+  margin-top: 32px;
+}
+.single-post-page .post__thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+.single-post-page .post__content {
+  margin-top: 32px;
+}
+.single-post-page .post__content p:last-child,
+.single-post-page .post__content h1:last-child,
+.single-post-page .post__content .h1:last-child,
+.single-post-page .post__content h2:last-child,
+.single-post-page .post__content .h2:last-child,
+.single-post-page .post__content h3:last-child,
+.single-post-page .post__content .h3:last-child,
+.single-post-page .post__content h4:last-child,
+.single-post-page .post__content .h4:last-child,
+.single-post-page .post__content h5:last-child,
+.single-post-page .post__content .h5:last-child,
+.single-post-page .post__content h6:last-child,
+.single-post-page .post__content .h6:last-child {
+  margin-bottom: 0;
+}
+.single-post-page .post__category {
+  background: #3c0058;
+  padding: 0 10px;
+  border-radius: 8px;
+  gap: 5px;
+  height: 24px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24.8px;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+  max-width: fit-content;
+  margin: 15px 0 0 0;
+}
+@media (max-width: 575.98px) {
+  .single-post-page .post__category {
+    font-size: 9px;
+    letter-spacing: 0.03em;
+    line-height: 19px;
+    margin-top: 10px;
+    height: 20px;
+    padding: 0 14px;
+  }
+}
+.single-post-page .post__category img {
+  width: 100%;
+  height: auto;
+  max-width: 14px;
+  filter: brightness(0) invert(1);
+}
+@media (max-width: 575.98px) {
+  .single-post-page .post__category img {
+    display: none;
+  }
+}
+.single-post-page .nmc-related-posts {
+  padding: 10px 0 80px 0;
+  background: #fdf9f6;
+}
+@media (max-width: 767.98px) {
+  .single-post-page .nmc-related-posts {
+    padding-bottom: 40px;
+  }
+}
+.single-post-page .nmc-related-posts .category-sub-title {
+  margin-bottom: 40px;
 }
 
 .page-template-about-template .hero-section {
