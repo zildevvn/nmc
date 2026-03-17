@@ -13,7 +13,7 @@
             <h1 class="d-none d-md-block"><span>世界一</span>のポーカープレイヤーをナインから</h1>
             <h1 class="d-md-none"><span>世界一<b>の</b></span>ポーカープレイヤーをナインから</h1>
             
-            <?php nmc_get_button('お問い合わせはこちら', ''); ?>
+            <?php nmc_get_button('お問い合わせはこちら', 'https://utage-system.com/line/open/2ECKS2Na5PSk', '_blank'); ?>
         </div>
     </div>
 </section>
