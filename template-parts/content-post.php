@@ -61,15 +61,17 @@
 
 
   <?php
+    $post_type = get_post_type();
     $related_args = array(
-        'post_type'      => 'post',
+        'post_type'      => $post_type,
         'posts_per_page' => 3,
-        'category_name'  => $category_slug,
         'post__not_in'   => array(get_the_ID()),
         'post_status'    => 'publish',
         'orderby'        => 'date',
         'order'          => 'DESC',
     );
+
+    $heading = $post_type == 'post' ? 'News' : 'Activity';
 
     $related_query = new WP_Query($related_args);
 
@@ -77,7 +79,7 @@
         <div class="nmc-related-posts nmc-category-posts">
             <div class="container">
                 <h2 class="category-title ncm-heading-highlight m-0" data-aos="fade-up" data-aos-easing="ease-in-out">
-                    Related Posts
+                    Related <?= $heading ?>
                 </h2>
 
                 <div class="category-sub-title d-flex align-items-center" data-aos="fade-up" data-aos-easing="ease-in-out">
