@@ -101,6 +101,36 @@
                     }
                 }
 
+                &:nth-child(2) {
+                    .point-item-subtitle {
+                        max-width: 424px;
+                    }
+
+                    .point-item-description {
+                        max-width: 350px;
+                    }
+                }
+
+                &:nth-child(3) {
+                    .point-item-subtitle {
+                        max-width: 467px;
+                    }
+
+                    .point-item-description {
+                        max-width: 435px;
+                    }
+                }
+
+                &:nth-child(4) {
+                    .point-item-subtitle {
+                        max-width: 510px;
+                    }
+
+                    .point-item-description {
+                        max-width: 380px;
+                    }
+                }
+
                 &-image {
                     width: 454px;
                     flex-shrink: 0;
@@ -571,6 +601,14 @@
                 @media (max-width: 767.98px) {
                     font-size: 15px;
                 }
+            }
+        }
+
+        .event-list {
+            margin-top: 50px;
+
+            @media (max-width: 767.98px) {
+                margin-top: 32px;
             }
         }
     }

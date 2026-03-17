@@ -10,7 +10,7 @@
             <p class="mb-0" data-aos="fade-up" data-aos-easing="ease-in-out">ご不明な点はお気軽にお問い合わせください</p>
 
             <div class="contact-section__action d-flex justify-content-center align-items-center flex-wrap" data-aos="fade-up" data-aos-easing="ease-in-out"> 
-                <?php nmc_get_button('よくあるご質問', '/faqs', '_self', 'is-style-secondary') ?>
+                <?php nmc_get_button('よくあるご質問', esc_url( home_url( '/about?#nmc-faqs' ) ), '_self', 'is-style-secondary') ?>
                 <?php nmc_get_button('お問い合わせはこちら', '/contact', '_self', 'is-style-green') ?>
             </div>
         </div>

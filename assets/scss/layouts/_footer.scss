@@ -1,23 +1,23 @@
 .main-footer {
-    padding: 60px 0;
+    padding: 60px 0 50px 0;
 
     @media (max-width: 767.98px) {
         padding: 38px 0;
     }
 
     * {
-        font-size: 18.7px;
-        font-weight: 700;
+        font-size: 14px;
+        font-weight: 600;
         letter-spacing: 0;
-        color: $color-primary;
+        color: $color-blue;
         font-family: $font-primary;
-        line-height: 1.4;
+        line-height: 21px;
 
-        @media (max-width: 767.98px) {
-            font-size: 14px;
-            letter-spacing: 0.01em;
-            line-height: 24px;
-        }
+        // @media (max-width: 767.98px) {
+        //     font-size: 14px;
+        //     letter-spacing: 0.01em;
+        //     line-height: 24px;
+        // }
     }
 
     ul {
@@ -48,10 +48,12 @@
         border-radius: 50%;
         border: 1px solid $color-primary;
         background: #fff;
-        position: absolute;
-        right: 20px;
-        bottom: -20px;
+        position: fixed;
+        right: calc(((100% - 1013px) / 2) + 20px);
+        bottom: 60px;
         transition: $transition-base;
+        z-index: 9999;
+
 
         svg {
             path {
@@ -123,10 +125,18 @@
         p,
         a {
             margin: 0;
-            line-height: 1.1;
 
             @media (max-width: 767.98px) {
                 line-height: 24px;
+            }
+        }
+
+        &.branch {
+            max-width: 220px;
+
+            @media (max-width: 767.98px) {
+                margin-left: auto;
+                margin-right: auto;
             }
         }
     }
@@ -135,7 +145,7 @@
         ul {
             li {
                 &:not(:last-child) {
-                    margin-bottom: 10px;
+                    // margin-bottom: 10px;
 
                     @media (max-width: 767.98px) {
                         margin-bottom: 0px;
@@ -144,13 +154,8 @@
 
                 a {
                     text-decoration: none;
-                    font-size: 16px;
-                    line-height: 1.2;
-
-                    @media (max-width: 767.98px) {
-                        font-size: 14px;
-                        line-height: 32.86px
-                    }
+                    font-size: 14px;
+                    line-height: 32.29px;
                 }
             }
         }
@@ -207,12 +212,10 @@
         span {
             display: inline-block;
             width: 100%;
-            font-size: 15px;
-            font-weight: 600;
+            font-size: 12px;
+            font-weight: 300;
 
             @media (max-width: 767.98px) {
-                font-size: 11px;
-
                 &:first-child {
                     text-align: right;
                 }

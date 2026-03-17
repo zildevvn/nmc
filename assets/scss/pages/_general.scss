@@ -237,6 +237,10 @@
 
         >.container {
             max-width: 1034px;
+
+            .nmc-category-posts .category-view-more {
+                display: none !important;
+            }
         }
     }
 }

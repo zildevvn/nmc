@@ -21,11 +21,15 @@
             </div>
 
             <div class="d-flex justify-content-center" data-aos="fade-up" data-aos-easing="ease-in-out">
-                <?php nmc_get_button('詳細はこちら', '#!', '_self', 'is-style-secondary'); ?>
+                <?php $link = esc_url( home_url( '/about/' ) ); ?>
+                <?php nmc_get_button('詳細はこちら', $link, '_self', 'is-style-secondary'); ?>
             </div>
 
             <div class="about-section__image" data-aos="fade-up" data-aos-easing="ease-in-out">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/image-member.png" alt="image member vd" />
+                <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/NvFROw8Wha0?autoplay=1&mute=1&controls=0&loop=1&playlist=NvFROw8Wha0&rel=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
             </div>
         </div>
     </div>

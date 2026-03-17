@@ -45,10 +45,6 @@
                                     <?php the_content(); ?>
                                 </div>
                             </div>
-
-                            <a href="<?php the_permalink(); ?>" aria-label="Read more <?php the_post(); ?>">
-                                Read more <?php the_post(); ?>
-                            </a>
                         </div>
                     <?php endwhile; wp_reset_postdata(); ?>
                 </div>

@@ -11,7 +11,7 @@
             </h2>
 
             <p class="h2 w-100 mb-0" data-aos="fade-up" data-aos-easing="ease-in-out">
-                イベント
+                イベントカレンダー
             </p>
 
             <?php get_template_part('template-parts/shared/event-list', null, [

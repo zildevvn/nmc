@@ -194,7 +194,8 @@ function nmc_get_posts_by_category($category_slug, $posts_per_page = 4, $title =
 			</div>
 
 			<div class="category-view-more d-flex justify-content-center">
-				<?php nmc_get_button($view_more_text, '/news', '_self', 'is-style-secondary'); ?>
+				<?php $link = $category_slug == 'record' ? '/activity' : '/news'; ?>
+				<?php nmc_get_button($view_more_text, esc_url( home_url($link)) , '_self', 'is-style-secondary'); ?>
 			</div>
 		</div>
 	<?php endif;

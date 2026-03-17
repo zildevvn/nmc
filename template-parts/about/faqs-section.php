@@ -76,7 +76,7 @@
     ];
 ?>
 
-<section class="faqs-section">
+<section id="nmc-faqs" class="faqs-section">
     <div class="container">
         <div class="faqs-section-content text-center">
             <h2 class="ncm-heading-highlight mb-0" data-aos="fade-up" data-aos-easing="ease-in-out">

@@ -37,7 +37,8 @@
                 </div>
 
                 <div class="partners-section__action">
-                    <?php nmc_get_button('所属プロ & 提携先一覧', '/partners', '_self', 'is-style-secondary') ?>
+                    <?php $link = esc_url( home_url( '/partners/' ) ); ?>
+                    <?php nmc_get_button('所属プロ & 提携先一覧', $link, '_self', 'is-style-secondary') ?>
                 </div> 
             <?php endif; ?>
         </div>

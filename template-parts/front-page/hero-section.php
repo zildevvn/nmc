@@ -1,14 +1,18 @@
-<section class="hero-section">
-    <div class="hero-section-bg"> 
-        <iframe width="560" height="315" 
-            src="https://www.youtube.com/embed/NvFROw8Wha0?autoplay=1&mute=1&controls=0&loop=1&playlist=NvFROw8Wha0&rel=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-        </iframe>
+<section class="nmc-section hero-section">
+    <div class="nmc-section-bg hero-section-bg"> 
+        <img class="d-none d-md-block" src="<?= get_template_directory_uri(); ?>/assets/images/home/bg-hero.jpg" alt="bg-hero"  />
+        <img class="d-md-none" src="<?= get_template_directory_uri(); ?>/assets/images/home/bg-mobile.jpg" alt="bg-hero-mb"  />
     </div>
     
     <div class="container">
         <div class="hero-section-content text-center w-100">
-            <h1><span>世界一</span>のポーカープレイヤーをナインから</h1>
+            <div class="hero-section__logo d-flex justify-content-center"> 
+                <img src="<?= get_template_directory_uri(); ?>/assets/images/home/logo-hero.png" alt="logo"  />
+            </div>
+
+            <h1 class="d-none d-md-block"><span>世界一</span>のポーカープレイヤーをナインから</h1>
+            <h1 class="d-md-none"><span>世界一<b>の</b></span>ポーカープレイヤーをナインから</h1>
+            
             <?php nmc_get_button('お問い合わせはこちら', ''); ?>
         </div>
     </div>
