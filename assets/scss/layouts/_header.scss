@@ -1,7 +1,7 @@
 .header {
     &-main {
         padding: 10px 0;
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
@@ -9,16 +9,42 @@
         background: #fff;
         transition: all 0.3s ease-in-out;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        box-sizing: border-box;
 
-        &.is-scrolled {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 5px 0;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        @media (max-width: 1023.98px) {
+            position: fixed;
         }
 
         body.logged-in & {
             top: 32px;
+
+            @media (max-width: 782.98px) {
+                top: 46px;
+            }
+        }
+
+        &#header-scroll {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            transition: all 0.5s ease-in-out;
+            transform: translateY(-100%);
+
+            @media (max-width: 1023.98px) {
+                display: none !important;
+            }
+
+            &.is-scrolled {
+                transform: translateY(0);
+                background: rgba(255, 255, 255, 0.8);
+                backdrop-filter: blur(10px);
+                // box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            }
+
+            body.logged-in & {
+                top: 32px;
+            }
         }
     }
 

@@ -5,8 +5,9 @@
 
     function initHeaderScroll() {
         let lastScrollTop = 0;
-        const $header = $('#site-header');
-        const scrollThreshold = 100;
+        const $headerMain = $('#site-header');
+        const $headerScroll = $('#header-scroll');
+        const scrollThreshold = $headerMain.outerHeight() || 100;
 
         $(window).on('scroll', function () {
             let scrollTop = $(this).scrollTop();
@@ -14,11 +15,11 @@
             // Detect scroll direction and prevent jitter
             if (Math.abs(lastScrollTop - scrollTop) <= 5) return;
 
-            // Add is-scrolled when scrollY > 100px
+            // Add is-scrolled when scrollY > threshold
             if (scrollTop > scrollThreshold) {
-                $header.addClass('is-scrolled');
+                $headerScroll.addClass('is-scrolled');
             } else {
-                $header.removeClass('is-scrolled');
+                $headerScroll.removeClass('is-scrolled');
             }
 
             lastScrollTop = scrollTop;
