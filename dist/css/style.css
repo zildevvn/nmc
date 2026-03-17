@@ -7378,11 +7378,9 @@ body.logged-in .mobile-menu-overlay {
 }
 
 .event-list iframe {
+  display: flex;
   display: block;
-  width: 100%;
-  height: auto;
-  border: 0;
-  min-height: fit-content;
+  min-height: 400px;
 }
 @media (max-width: 767.98px) {
   .event-list iframe {
