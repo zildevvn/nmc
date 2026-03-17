@@ -3,16 +3,6 @@
 (function ($) {
     "use strict";
 
-    function initMarquee() {
-        const $marquees = $('.partners-section__marquee, .logos-section__marquee');
-        $marquees.each(function () {
-            const $this = $(this);
-            // Duplicate the content to allow for a seamless infinite scroll loop
-            const content = $this.html();
-            $this.append(content);
-        });
-    }
-
     function initHeaderScroll() {
         let lastScrollTop = 0;
         const $header = $('#site-header');
@@ -21,17 +11,27 @@
         $(window).on('scroll', function () {
             let scrollTop = $(this).scrollTop();
 
-            // Detect scroll direction
+            // Detect scroll direction and prevent jitter
             if (Math.abs(lastScrollTop - scrollTop) <= 5) return;
 
-            if (scrollTop > lastScrollTop && scrollTop > scrollThreshold) {
-                // Scroll Down
-                $header.addClass('is-hidden');
+            // Add is-scrolled when scrollY > 100px
+            if (scrollTop > scrollThreshold) {
+                $header.addClass('is-scrolled');
             } else {
-                // Scroll Up
-                $header.removeClass('is-hidden');
+                $header.removeClass('is-scrolled');
             }
+
             lastScrollTop = scrollTop;
+        });
+    }
+
+    function initMarquee() {
+        const $marquees = $('.partners-section__marquee, .logos-section__marquee');
+        $marquees.each(function () {
+            const $this = $(this);
+            // Duplicate the content to allow for a seamless infinite scroll loop
+            const content = $this.html();
+            $this.append(content);
         });
     }
 
@@ -50,8 +50,8 @@
     }
 
     $(document).ready(function () {
-        initMarquee();
         initHeaderScroll();
+        initMarquee();
         initFaqAccordion();
 
         $('.btn-top').on('click', function (e) {

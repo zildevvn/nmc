@@ -136,8 +136,9 @@ img {
     margin: 0;
     text-transform: uppercase;
     font-weight: 900;
-    font-family: "Marcellus SC", serif;
+    font-family: $font-primary;
     letter-spacing: 0.06em;
+    box-sizing: border-box;
 
     @media (max-width: 1023.98px) {
         font-size: 80px;
