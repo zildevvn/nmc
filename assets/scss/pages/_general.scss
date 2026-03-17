@@ -246,19 +246,16 @@
 }
 
 .event-list {
-    // background: #fff;
+    background: #fff;
+    position: relative;
+    width: 100%;
+    transition: height 0.3s ease-in-out;
 
     iframe {
-        display: flex;
         display: block;
-        // width: 100%;
-        // height: auto;
-        // border: 0;
-        min-height: 400px;
-
-        @media (max-width: 767.98px) {
-            height: auto;
-        }
+        width: 100%;
+        height: 100%;
+        border: 0;
     }
 }
 

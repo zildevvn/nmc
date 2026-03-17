@@ -3,6 +3,34 @@
 (function ($) {
     "use strict";
 
+    function initIframeResize() {
+        window.addEventListener('message', function (e) {
+            // Adjust the height depending on the message format from the iframe
+            if (e.data) {
+                let newHeight = null;
+                
+                // Typical iframe resizer message format
+                if (typeof e.data === 'string' && e.data.indexOf('iframeHeight') !== -1) {
+                    try {
+                        const parsed = JSON.parse(e.data);
+                        newHeight = parsed.iframeHeight || parsed.height;
+                    } catch (error) {}
+                } else if (typeof e.data === 'object' && e.data.height) {
+                    newHeight = e.data.height;
+                } else if (typeof e.data === 'string' && !isNaN(e.data)) {
+                    newHeight = e.data;
+                } else if (e.data.type === 'setHeight' && e.data.height) {
+                    newHeight = e.data.height;
+                }
+
+                if (newHeight) {
+                    $('.event-list').css('height', newHeight + 'px');
+                    $('.event-list iframe').css('height', newHeight + 'px');
+                }
+            }
+        });
+    }
+
     function initHeaderScroll() {
         let lastScrollTop = 0;
         const $headerMain = $('#site-header');
@@ -54,6 +82,7 @@
         initHeaderScroll();
         initMarquee();
         initFaqAccordion();
+        initIframeResize();
 
         $('.btn-top').on('click', function (e) {
             e.preventDefault();
