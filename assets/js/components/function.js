@@ -78,16 +78,28 @@
         });
     }
 
+    function initBackToTop() {
+        const $btnTop = $('.btn-top');
+        $(window).on('scroll', function () {
+            if ($(this).scrollTop() > 100) {
+                $btnTop.addClass('is-visible');
+            } else {
+                $btnTop.removeClass('is-visible');
+            }
+        });
+
+        $btnTop.on('click', function (e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
     $(document).ready(function () {
         initHeaderScroll();
         initMarquee();
         initFaqAccordion();
         initIframeResize();
-
-        $('.btn-top').on('click', function (e) {
-            e.preventDefault();
-            $('html, body').animate({ scrollTop: 0 }, 600);
-        });
+        initBackToTop();
 
         AOS.init({
             once: false

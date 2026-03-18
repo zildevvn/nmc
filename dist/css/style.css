@@ -6990,10 +6990,18 @@ body.logged-in .mobile-menu-overlay {
   border: 1px solid #3c0058;
   background: #fff;
   position: fixed;
-  right: calc((100% - 1013px) / 2 + 20px);
-  bottom: 60px;
+  bottom: 2.5em;
+  right: 2.5em;
   transition: all 0.3s ease;
   z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.main-footer .btn-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 .main-footer .btn-top svg path {
   transition: all 0.3s ease;

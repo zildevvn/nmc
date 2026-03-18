@@ -98,12 +98,12 @@ if (!function_exists('nmc_create_custom_post_type')) {
 
 		register_post_type('activity', array(
 			'labels' => [
-				'name' => __('ニュース'),
-				'singular_name' => __('ニュース'),
+				'name' => __('お知らせ'),
+				'singular_name' => __('お知らせ'),
 				'add_new' => __('新規追加'),
-				'add_new_item' => __('ニュースを追加'),
-				'edit_item' => __('ニュースを編集'),
-				'new_item' => __('新しいニュース'),
+				'add_new_item' => __('お知らせを追加'),
+				'edit_item' => __('お知らせを編集'),
+				'new_item' => __('新しいお知らせ'),
 				'view_item' => __('ニュースを表示'),
 				'search_items' => __('ニュースを検索'),
 				'not_found' => __('ニュースが見つかりません'),

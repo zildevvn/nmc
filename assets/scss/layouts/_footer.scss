@@ -49,11 +49,19 @@
         border: 1px solid $color-primary;
         background: #fff;
         position: fixed;
-        right: calc(((100% - 1013px) / 2) + 20px);
-        bottom: 60px;
+        bottom: 2.5em;
+        right: 2.5em;
         transition: $transition-base;
         z-index: 9999;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
 
+        &.is-visible {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
 
         svg {
             path {
