@@ -28,7 +28,8 @@
             <div class="about-section__image" data-aos="fade-up" data-aos-easing="ease-in-out">
                 <figure class="wp-block-video">
                     <?php $about_video = home_url( '/wp-content/uploads/2026/03/about.mp4' ); ?>
-                    <video controls playsinline preload="metadata" src="<?php echo esc_url( $about_video ); ?>">
+                    <video controls playsinline autoplay muted loop preload="metadata">
+                        <source src="<?php echo esc_url( $about_video ); ?>" type="video/mp4">
                     </video>
                 </figure>
             </div>
