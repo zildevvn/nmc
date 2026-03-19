@@ -12,7 +12,7 @@ get_header();
         <?php get_template_part('template-parts/about/perk-section'); ?>
         <?php get_template_part('template-parts/about/plan-section'); ?>
         <?php get_template_part('template-parts/about/event-section'); ?>
-        <?php get_template_part('template-parts/shared/voice-section'); ?>
+        <?php //get_template_part('template-parts/shared/voice-section'); ?>
         <?php get_template_part('template-parts/about/steps-section'); ?>
         <?php get_template_part('template-parts/about/faqs-section'); ?>
         <?php get_template_part('template-parts/shared/partner-section'); ?>
