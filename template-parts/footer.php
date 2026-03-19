@@ -40,7 +40,7 @@
 
                 <?php if($branch_office): ?>
                     <div class="main-footer-office branch">
-                        <p>本社</p> 
+                        <p>支社</p> 
                         <p><?php echo $branch_office['address']; ?> </p>
                         <p>電話番号: <a href="tel:<?= $branch_office['phone'] ?>"><?= $branch_office['phone'] ?></a></p>
                     </div>

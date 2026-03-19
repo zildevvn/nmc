@@ -73,6 +73,7 @@
             color: #fff;
 
             h1 {
+                font-family: "Noto Serif JP", serif;
                 font-weight: 600;
                 margin-bottom: 30px;
                 margin-top: 40px;
@@ -281,6 +282,7 @@
 
         &__desc {
             margin: -10px 0 0 0;
+            color: #3c0058;
         }
 
         &__media {
@@ -472,7 +474,7 @@
             }
 
             h3 {
-                font-family: $font-quaternary;
+                font-family: "Noto Serif JP", serif;
                 font-weight: 300;
                 font-size: 24px;
                 line-height: 30.6px;
@@ -512,6 +514,7 @@
             }
 
             .author {
+                font-family: "Noto Serif JP", serif;
                 margin-top: 20px;
                 font-weight: 300;
                 font-size: 20px;
