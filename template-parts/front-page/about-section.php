@@ -28,8 +28,8 @@
             <div class="about-section__image" data-aos="fade-up" data-aos-easing="ease-in-out">
                 <figure class="wp-block-video">
                     <?php $about_video = home_url( '/wp-content/uploads/2026/03/about.mp4' ); ?>
-                    <video controls src="<?php echo esc_url( $about_video ); ?>" data-src="<?php echo esc_url( $about_video ); ?>" class="lazyloading">
-                        <noscript><video controls src="<?php echo esc_url( $about_video ); ?>"></noscript>
+                    <video controls preload="metadata" src="<?php echo esc_url( $about_video ); ?>#t=0.5" data-src="<?php echo esc_url( $about_video ); ?>#t=0.5" class="lazyloading">
+                        <noscript><video controls preload="metadata" src="<?php echo esc_url( $about_video ); ?>#t=0.5"></noscript>
                     </video>
                 </figure>
             </div>
