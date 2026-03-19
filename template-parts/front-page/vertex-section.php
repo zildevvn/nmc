@@ -1,7 +1,13 @@
 <section class="nmc-section vertex-section">
     <div class="nmc-section-bg vertex-section-bg"> 
-        <img class="d-none d-md-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg-video-min.jpg" alt="background video desktop" />
-        <img class="d-block d-md-none" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/img-sec_studium-mb.jpg" alt="background video mobile" />
+        <img class="d-none d-md-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg-vertex-new.jpg" alt="background video desktop" />
+        <img class="d-block d-md-none" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg-vertex-mb-new.jpg" alt="background video mobile" />
+    </div>
+
+    <div class="vertex-section__sub-text" data-aos="fade-up" data-aos-easing="ease-in-out">
+        <div class="text-marquee">
+            <span>SHIBUYA’S NEW PLAYGROUND SHIBUYA’S NEW PLAYGROUND SHIBUYA’S NEW PLAYGROUND SHIBUYA’S NEW PLAYGROUND</span>
+        </div>
     </div>
 
     <div class="container"> 

@@ -8,13 +8,13 @@
             // Adjust the height depending on the message format from the iframe
             if (e.data) {
                 let newHeight = null;
-                
+
                 // Typical iframe resizer message format
                 if (typeof e.data === 'string' && e.data.indexOf('iframeHeight') !== -1) {
                     try {
                         const parsed = JSON.parse(e.data);
                         newHeight = parsed.iframeHeight || parsed.height;
-                    } catch (error) {}
+                    } catch (error) { }
                 } else if (typeof e.data === 'object' && e.data.height) {
                     newHeight = e.data.height;
                 } else if (typeof e.data === 'string' && !isNaN(e.data)) {
@@ -55,7 +55,7 @@
     }
 
     function initMarquee() {
-        const $marquees = $('.partners-section__marquee, .logos-section__marquee');
+        const $marquees = $('.partners-section__marquee, .logos-section__marquee, .text-marquee');
         $marquees.each(function () {
             const $this = $(this);
             // Duplicate the content to allow for a seamless infinite scroll loop

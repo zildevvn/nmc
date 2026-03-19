@@ -144,7 +144,8 @@ img {
     margin: 0;
     text-transform: uppercase;
     font-weight: 700;
-    font-family: 'Cinzel', $font-primary;
+    font-family: $font-cinzel;
+    font-optical-sizing: auto;
     letter-spacing: 0.06em;
     box-sizing: border-box;
 
