@@ -87,6 +87,10 @@
 
                 span {
                     color: $color-bronze;
+                    -webkit-text-emphasis: filled circle;
+                    text-emphasis: filled circle;
+                    -webkit-text-emphasis-position: over right;
+                    text-emphasis-position: over right;
 
                     @media (max-width: 767.98px) {
                         display: inline-block;
@@ -97,6 +101,8 @@
                         font-size: inherit;
                         font-weight: inherit;
                         color: var(--bs-heading-color);
+                        -webkit-text-emphasis: none;
+                        text-emphasis: none;
                     }
                 }
             }
