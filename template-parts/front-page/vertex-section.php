@@ -13,8 +13,8 @@
             <div class="vertex-section__video" data-aos="fade-up" data-aos-easing="ease-in-out"> 
                 <figure class="wp-block-video">
                     <?php $vertex_video = home_url( '/wp-content/uploads/2026/03/vertex.mp4' ); ?>
-                    <video controls src="<?php echo esc_url( $vertex_video ); ?>" data-src="<?php echo esc_url( $vertex_video ); ?>" class="lazyloading">
-                        <noscript><video controls src="<?php echo esc_url( $vertex_video ); ?>"></noscript>
+                    <video controls playsinline preload="metadata" src="<?php echo esc_url( $vertex_video ); ?>" data-src="<?php echo esc_url( $vertex_video ); ?>" class="lazyloading">
+                        <noscript><video controls playsinline preload="metadata" src="<?php echo esc_url( $vertex_video ); ?>"></noscript>
                     </video>
                 </figure>
             </div>

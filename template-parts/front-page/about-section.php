@@ -28,11 +28,22 @@
             <div class="about-section__image" data-aos="fade-up" data-aos-easing="ease-in-out">
                 <figure class="wp-block-video">
                     <?php $about_video = home_url( '/wp-content/uploads/2026/03/about.mp4' ); ?>
-                    <video controls preload="metadata" src="<?php echo esc_url( $about_video ); ?>#t=0.5" data-src="<?php echo esc_url( $about_video ); ?>#t=0.5" class="lazyloading">
-                        <noscript><video controls preload="metadata" src="<?php echo esc_url( $about_video ); ?>#t=0.5"></noscript>
+                    <video id="about-video" controls playsinline preload="metadata" src="<?php echo esc_url( $about_video ); ?>" data-src="<?php echo esc_url( $about_video ); ?>" class="lazyloading">
+                        <noscript><video controls playsinline preload="metadata" src="<?php echo esc_url( $about_video ); ?>"></noscript>
                     </video>
                 </figure>
             </div>
+            <script>
+            (function() {
+                var v = document.getElementById('about-video');
+                if (!v) return;
+                v.addEventListener('loadedmetadata', function() {
+                    if (!v.seeking) {
+                        v.currentTime = 0.5;
+                    }
+                }, { once: true });
+            })();
+            </script>
         </div>
     </div>
 </section>
