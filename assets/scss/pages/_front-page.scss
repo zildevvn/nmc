@@ -11,6 +11,45 @@
             padding-bottom: 150px;
         }
 
+        &-images {
+            img {
+                position: absolute;
+                width: 32%;
+                height: auto;
+                max-width: fit-content;
+                animation: n9_zoom 14s ease infinite;
+
+                @media (max-width: 767.98px) {
+                    width: 50%;
+                }
+            }
+
+            .image-left {
+                left: 0;
+                bottom: 0;
+            }
+
+            .image-right {
+                right: 3%;
+                bottom: 4%;
+
+                @media (max-width: 767.98px) {
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+
+            .image-left-top {
+                left: 0;
+                top: 0;
+            }
+
+            .image-left-bottom {
+                left: 0;
+                bottom: 0;
+            }
+        }
+
         .hero-section-bg {
             width: 100%;
             height: 100%;

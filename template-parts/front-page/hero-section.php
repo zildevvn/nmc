@@ -1,7 +1,15 @@
 <section class="nmc-section hero-section">
     <div class="nmc-section-bg hero-section-bg"> 
-        <img class="d-none d-md-block" src="<?= get_template_directory_uri(); ?>/assets/images/home/bg-hero.jpg" alt="bg-hero"  />
-        <img class="d-md-none" src="<?= get_template_directory_uri(); ?>/assets/images/home/bg-mobile.jpg" alt="bg-hero-mb"  />
+        <img class="d-none d-md-block" src="<?= get_template_directory_uri(); ?>/assets/images/home/bg-hero-new.jpg" alt="bg-hero"  />
+        <img class="d-md-none" src="<?= get_template_directory_uri(); ?>/assets/images/home/bg-hero-new.jpg" alt="bg-hero-mb"  />
+    </div>
+
+    <div class="hero-section-images"> 
+        <img class="image-left d-none d-md-block" src="<?= get_template_directory_uri(); ?>/assets/images/home/image-hero-left.png" alt="bg-hero"  />
+        <img class="image-right d-none d-md-block" src="<?= get_template_directory_uri(); ?>/assets/images/home/image-hero-right.png" alt="bg-hero"  />
+        <img class="image-left-top d-md-none" src="<?= get_template_directory_uri(); ?>/assets/images/home/image-hero-left-top.png" alt="bg-hero-mb"  />
+        <img class="image-left-bottom d-md-none" src="<?= get_template_directory_uri(); ?>/assets/images/home/image-hero-left-bottom.png" alt="bg-hero-mb"  />
+        <img class="image-right d-md-none" src="<?= get_template_directory_uri(); ?>/assets/images/home/image-hero-right-bottom.png" alt="bg-hero-mb"  />
     </div>
     
     <div class="container">
