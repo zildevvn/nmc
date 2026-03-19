@@ -78,7 +78,12 @@ $pokers = [
                         </div>
                         
                         <div class="item-poker__image">
-                            <?php the_post_thumbnail('full', ['class' => 'img-fluid']); ?>
+                            <?php if (has_post_thumbnail()): ?>
+                                <?php the_post_thumbnail('full', ['class' => 'img-fluid']); ?>
+                                <div class="overlay"> 
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/card-overlay.png" alt="<?php echo $poker['title']; ?>">
+                                </div>
+                            <?php endif; ?>
                         </div>
 
                         <p class="item-poker__title">
