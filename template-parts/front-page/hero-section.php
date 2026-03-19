@@ -10,8 +10,8 @@
                 <img src="<?= get_template_directory_uri(); ?>/assets/images/home/logo-hero.png" alt="logo"  />
             </div>
 
-            <h1 class="d-none d-md-block"><span>世界一</span>のポーカープレイヤーをナインから</h1>
-            <h1 class="d-md-none"><span>世界一<b>の</b></span>ポーカープレイヤーをナインから</h1>
+            <h1 class="d-none d-md-block"><span><em>世</em><em>界</em><em>一</em></span>のポーカープレイヤーをナインから</h1>
+            <h1 class="d-md-none"><span><em>世</em><em>界</em><em>一</em><b>の</b></span>ポーカープレイヤーをナインから</h1>
             
             <?php nmc_get_button('お問い合わせはこちら', 'https://liff.line.me/2008545613-DmOEBmma/landing?follow=%40624huxhg&lp=CD7j8q&liff_id=2008545613-DmOEBmma', '_blank'); ?>
         </div>
