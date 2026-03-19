@@ -8,7 +8,12 @@
         <div class="vertex-section-content text-center"> 
             <img data-aos="fade-up" data-aos-easing="ease-in-out" src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/logo-ver.png" alt="image section" />
             <div class="vertex-section__video" data-aos="fade-up" data-aos-easing="ease-in-out"> 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/2uKkai47M3E?autoplay=1&mute=1&controls=1&loop=1&playlist=2uKkai47M3E&rel=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <figure class="wp-block-video">
+                    <?php $vertex_video = home_url( '/wp-content/uploads/2026/03/vertex.mp4' ); ?>
+                    <video controls src="<?php echo esc_url( $vertex_video ); ?>" data-src="<?php echo esc_url( $vertex_video ); ?>" class="lazyloading">
+                        <noscript><video controls src="<?php echo esc_url( $vertex_video ); ?>"></noscript>
+                    </video>
+                </figure>
             </div>
         </div>
     </div>
