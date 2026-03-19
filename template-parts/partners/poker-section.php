@@ -56,8 +56,8 @@ $pokers = [
                 'post_type'      => 'poker',
                 'posts_per_page' => -1,
                 'post_status'    => 'publish',
-                'orderby'        => 'date',
-                'order'          => 'DESC',
+                'orderby'        => 'menu_order',
+                'order'          => 'ASC',
             );
 
             $query = new WP_Query($args);

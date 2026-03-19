@@ -92,7 +92,7 @@ if (!function_exists('nmc_create_custom_post_type')) {
 			'menu_position' => 20,
 			'menu_icon' => 'dashicons-groups',
 			'show_in_rest' => false,
-			'supports' => ['title', 'editor', 'thumbnail', 'revisions'],
+			'supports' => ['title', 'editor', 'thumbnail', 'revisions', 'page-attributes'],
 		));
 
 
