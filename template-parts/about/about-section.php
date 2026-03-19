@@ -8,7 +8,7 @@
         <div class="about-section-content text-center">
             <h2 class="mb-0" data-aos="fade-up" data-aos-easing="ease-in-out">「稼ぎ、遊び、そして世界へ。」</h2>
             <p class="mb-0" data-aos="fade-up" data-aos-easing="ease-in-out">
-                ナインメンバーズクラブは、単なるポーカーコミュニティではありません。 日本初の実業団プロ制度、最高峰のプレイスポット、 
+                ナインメンバーズクラブは、単なるポーカーコミュニティではありません。 <br>日本初の実業団プロ制度、最高峰のプレイスポット、 
                 <span>そして世界レベルの教育環境を兼ね備えた、次世代のメンバーズクラブです。</span>
             </p>
         </div>
