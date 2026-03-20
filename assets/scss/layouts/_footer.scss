@@ -209,7 +209,6 @@
 
     &-copyright {
         margin: 0;
-        font-family: "Noto Serif JP", serif;
 
         @media (max-width: 767.98px) {
             display: flex;
@@ -223,6 +222,7 @@
             width: 100%;
             font-size: 12px;
             font-weight: 300;
+            font-family: "Noto Serif JP", serif !important;
 
             @media (max-width: 767.98px) {
                 &:first-child {
