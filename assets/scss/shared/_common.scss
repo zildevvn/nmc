@@ -172,3 +172,60 @@ img {
         letter-spacing: 0.03em;
     }
 }
+
+body {
+    &:not(.home):not(.page-template-about-template):not(.page-template-partners-template):not(.page-template-events-template):not(.page-template-news-template):not(.page-template-activity-template) {
+        h2 {
+            background: $color-purple;
+            padding: .75em 1em;
+            color: #fff;
+            font-size: 1.2em;
+            line-height: 1.4;
+            position: relative;
+            z-index: 1;
+
+            @media (min-width: 600px) {
+                font-size: 1.4em;
+            }
+
+            &::before {
+                position: absolute;
+                display: block;
+                pointer-events: none;
+                content: "";
+                top: -4px;
+                left: 0;
+                width: 100%;
+                height: calc(100% + 4px);
+                box-sizing: content-box;
+                border-top: solid 2px $color-purple;
+                border-bottom: solid 2px $color-purple;
+            }
+        }
+
+        h3 {
+            padding: 0 .5em .5em;
+            font-size: 1.1em;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 3em 0 2em;
+            position: relative;
+
+            @media (min-width: 600px) {
+                font-size: 1.3em;
+            }
+
+            &:before {
+                content: "";
+                width: 100%;
+                height: 2px;
+                background: repeating-linear-gradient(90deg, $color-purple 0%, $color-purple 29.3%, rgba(150, 150, 150, .2) 29.3%, rgba(150, 150, 150, .2) 100%);
+                bottom: 0;
+                display: block;
+                left: 0;
+                position: absolute;
+                z-index: 0;
+            }
+        }
+    }
+}

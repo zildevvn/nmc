@@ -125,3 +125,106 @@
         }
     }
 }
+
+
+.single-post-page .post__title {
+    font-size: 36px !important;
+    line-height: 1.6 !important;
+    letter-spacing: 0.18em !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 12px 0 0 !important;
+    color: #1b365d !important;
+
+    @media (max-width: 1023.98px) {
+        font-size: 26px !important;
+    }
+
+    @media (max-width: 767.98px) {
+        font-size: 20px !important;
+        letter-spacing: 0.09em !important;
+        line-height: 37.5px !important;
+    }
+
+    &::before {
+        content: none !important;
+    }
+}
+
+
+body.single-activity,
+body.single-post {
+
+    .nmc-category-posts {
+        .ncm-heading-highlight {
+            color: #e8e8e8 !important;
+        }
+    }
+
+    .contact-section {
+        .ncm-heading-highlight {
+            color: #692f6e !important;
+        }
+
+        h2 {
+            font-size: 36px !important;
+            line-height: 1.6 !important;
+            letter-spacing: 0.18em !important;
+            color: #fff !important;
+            background: transparent !important;
+            padding: 0 !important;
+
+
+            @media (max-width: 1023.98px) {
+                font-size: 26px !important;
+            }
+
+            @media (max-width: 767.98px) {
+                font-size: 20px !important;
+                letter-spacing: 0.09em !important;
+                line-height: 37.5px !important;
+            }
+
+            &::before {
+                content: none !important;
+            }
+        }
+    }
+
+    .contact-section,
+    .nmc-category-posts {
+
+        .ncm-heading-highlight {
+            font-size: 105px !important;
+            line-height: 1.5 !important;
+            background: transparent !important;
+            padding: 0 !important;
+
+            &::before {
+                content: none !important;
+            }
+
+            @media (max-width: 1023.98px) {
+                font-size: 80px !important;
+            }
+
+            @media (max-width: 767.98px) {
+                font-size: 52px !important;
+                letter-spacing: 0.03em !important;
+            }
+        }
+    }
+
+    .nmc-category-posts .category-posts-list .item-post__title {
+        padding: 0 !important;
+        font-size: 16px !important;
+        line-height: 24.8px !important;
+        margin: 2px 0 0 0 !important;
+        position: relative;
+
+        &::before {
+            content: none !important;
+        }
+    }
+
+}

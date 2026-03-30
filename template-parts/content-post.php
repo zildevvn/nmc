@@ -50,9 +50,13 @@
         <?php endif; ?>
 
         <div class="post__thumbnail">
-			<?php the_post_thumbnail('full', ['class' => 'img-fluid']); ?>
+			<?php if (has_post_thumbnail()) : ?>
+				<?php the_post_thumbnail('full', ['class' => 'img-fluid']); ?>
+			<?php else : ?>
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/feature-image-default.jpeg" class="img-fluid" alt="<?php the_title_attribute(); ?>">
+			<?php endif; ?>
 		</div>
-
+        
         <div class="post__content">
             <?php the_content() ?>
         </div>
@@ -98,7 +102,11 @@
                     <?php while ($related_query->have_posts()): $related_query->the_post(); ?>
                         <div class="item-post" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="<?php echo $index * 200; ?>">
                             <div class="item-post__thumbnail">
-                                <?php the_post_thumbnail('full', ['class' => 'img-fluid']); ?>
+                                <?php if (has_post_thumbnail()) : ?>
+                                    <?php the_post_thumbnail('full', ['class' => 'img-fluid']); ?>
+                                <?php else : ?>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/feature-image-default.jpeg" class="img-fluid" alt="<?php the_title_attribute(); ?>">
+                                <?php endif; ?>
                             </div>
 
                             <div class="item-post__content"> 
