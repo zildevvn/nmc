@@ -8312,6 +8312,9 @@ body.logged-in .mobile-menu-overlay {
     margin-top: 42px;
   }
 }
+.home .voice-section {
+  display: none;
+}
 
 .error404 .site-main {
   padding-top: 20vh;
@@ -8553,6 +8556,10 @@ body.single-post .nmc-category-posts .category-posts-list .item-post__title {
 body.single-activity .nmc-category-posts .category-posts-list .item-post__title::before,
 body.single-post .nmc-category-posts .category-posts-list .item-post__title::before {
   content: none !important;
+}
+
+.single-activity .single-post-page .site-main > div.activity > .container {
+  max-width: 1000px;
 }
 
 .page-template-about-template .hero-section {

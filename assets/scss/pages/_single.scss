@@ -228,3 +228,11 @@ body.single-post {
     }
 
 }
+
+.single-activity {
+    .single-post-page {
+        .site-main>div.activity>.container {
+            max-width: 1000px;
+        }
+    }
+}
